@@ -1,0 +1,103 @@
+body {
+    background-image: url(https://www.macmillandictionaryblog.com/wp-content/uploads/2018/03/pattern-810x416.jpg);
+}
+
+.todo-container {
+    background-color: #fff;
+    width: 600px;
+    margin-top: 10rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px #cccc;
+    position: relative;
+}
+
+.list-heading {
+    text-align: center;
+}
+
+.messages {
+    display: none;
+    transition: 2s;
+}
+
+.alert-success,
+.alert-danger {
+    transition: 2s;
+}
+
+.show {
+    display: block;
+    width: 540px;
+    position: absolute;
+    transform: translate(0%, -250%);
+}
+
+li {
+    display: block;
+    padding: 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#todos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.delete-todo,
+.update-todo {
+    float: right;
+}
+
+.mark-done {
+    color: #777;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskBar {
+    margin-top: 30px;
+    display: flex;
+    height: 20px;
+}
+
+.progress {
+    margin-top: 10px;
+    width: 40%;
+    height: 30px;
+}
+
+.progress-bar {
+    color: #000;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+    }
+}
+
+#mass-delete {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.mark-done.done {
+    text-decoration: line-through;
+}
+
+.edit-mode {
+    background-color: #cccf;
+}
