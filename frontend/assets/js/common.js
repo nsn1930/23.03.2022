@@ -40,11 +40,17 @@ const getData = () => {
 
                 })
 
-                let perc = Math.floor(doneEntries / length * 100) + '%'
+                let perc = 0
+
+                if (length === 0) {
+                    perc === length
+                } else {
+                    perc = (doneEntries / length * 100).toFixed(0)
+                }
 
                 html += `<div class="taskBar">${doneEntries} tasks completed from ${length}</div>
                         <div class="progress">
-                            <div class="progress-bar bg-secondary" role = "progressbar" style = "width:${perc};" >${perc}</div>
+                            <div class="progress-bar bg-secondary" role = "progressbar" style = "width:${perc}%;" >${perc}%</div>
                         </div>`
 
 
