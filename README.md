@@ -19,11 +19,11 @@ This project is for **educational** porpuses only. Pull request are welcome, but
 -   Node.js backend
 -   Javascript
 
-## Project start instuctions
+## Project instalation instuctions
 
--   Frontend and backend must be installed separetely;
+-   Frontend and backend terminals must be installed separetely:
 
--   $ npm install
+_$ npm install_
 
 -   Port for Frontend is set to 5000. If you want to change port go:
 
@@ -32,6 +32,12 @@ _Frontend -> package.json -> "scripts": {"start": "dead-server --port=5000 --hos
 -   Port for Backend is set to 5001. If you want to change port go:
 
 _Backend -> index.js -> last lines of the code: app.listen(5001)_
+
+## Project start instuctions
+
+-   After instalation frontend and backend terminals must be started separetely:
+
+_npm run start_
 
 ## Authors
 
